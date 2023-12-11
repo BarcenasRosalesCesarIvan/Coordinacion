@@ -1,0 +1,168 @@
+.cabeza {
+  background: rgba(73, 87, 154, 0.976);
+  /*min-height: 20vh;*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; /* Ajusta el espacio entre las imágenes según tus preferencias */
+}
+
+.cabeza .tecnm {
+  background: url(tecnm2.png) no-repeat left;
+  background-size: contain;
+}
+
+
+.cabeza .itsjr{
+  background: url(logotec.jpg) no-repeat right;
+  background-size: contain;
+}
+
+.cabeza .titulo{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  display: flex;
+}
+
+.contenido {
+  background: rgb(93, 95, 104);
+  min-height: 20vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; /* Ajusta el espacio entre las imágenes según tus preferencias */
+}
+
+.usa{
+  background: url(right.png) no-repeat center;
+  background-size: cover;
+}
+
+.ingla{
+  background: url(left.png) no-repeat center;
+  background-size: cover;
+}
+
+
+.cuerpo {
+ /*background: rgba(72, 99, 219, 0.976);*/
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.cuerpo label {
+  display: block;
+}
+
+.cuerpo input[type="text"],
+.cuerpo input[type="time"],
+.cuerpo input[type="date"],
+.cuerpo select {
+  width: 100%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.634);
+}
+
+.cuerpo button {
+  display: block;
+  border-radius: 100px;
+  border-color: transparent;
+  color: white;
+  background-color: rgba(252, 33, 33, 0.643);
+}
+
+.cuerpo button:hover {
+  background: #2079b0;
+  background-image: -webkit-linear-gradient(top, #2079b0, #ef0e0e);
+  background-image: -moz-linear-gradient(top, #2079b0, #ef0e0e);
+  background-image: -ms-linear-gradient(top, #2079b0, #ef0e0e);
+  background-image: -o-linear-gradient(top, #2079b0, #ef0e0e);
+  background-image: linear-gradient(to bottom, #2079b0, #ef0e0e);
+  text-decoration: none;
+}
+
+.cuerpo span {
+  display: block;
+  color: red;
+  font-size: x-medium;
+  background-color: rgba(0, 0, 0, 0.201);
+  border-radius: 100px
+}
+
+.piedepagina {
+  background: rgba(73, 87, 154, 0.976);
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; 
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.piedepagina .piepag{
+  font-family: "Times New Roman";
+  font-size:  medium;
+  text-align: center;
+  
+}
+
+.wrapper .title{
+  color:white;
+  font-size: 25px;
+  text-align: center;
+}
+
+/*.wrapper dl{
+  -moz-box-shadow: 0px 0px 10px #000000;
+  -webkit-box-shadow: 0px 0px 10px #000000;
+  box-shadow: 0px 0px 10px #000000;
+  position: relative;
+}*/
+
+ .wrapper dt {
+  background: rgba(73, 87, 154, 0.976);
+  border-bottom: 1px solid #c5c5c5;
+  border-top: 1px solid white;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 2em;
+  position: relative;
+  z-index: 1;
+}
+
+dt.active + dd {
+  color: blue;
+  position: static;
+  height: auto;
+  padding: 1em 0;
+  transition: all 0.5s;
+}
+
+dt:first-child {
+  border-top: none;
+}
+
+dt:nth-last-child(2) {
+  border-bottom: none;
+}
+
+dd {
+  background: white;
+  border-bottom: 1px solid #c5c5c5;
+  margin: 0px;
+  padding: 0px;
+  height: 0;
+  z-index: -1;
+  top: 0;
+  position: absolute;
+}
+
+.hide {
+  display: none;
+}
+
+
